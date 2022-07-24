@@ -11,6 +11,17 @@
   line-height: 1.2;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+
+  @media (max-width: $mobile) {
+    height: 1px;
+    padding: 0;
+    // скрываем весь текст в шапке 2 способа
+    // font-size: 0;
+    // выбрать данный селектор cart-header и после него выбрать все элементы первого уровня вложенности и скахать им display: none;
+    & > * {
+      display: none;
+    }
+  }
 }
 
 .cart-header__title {
