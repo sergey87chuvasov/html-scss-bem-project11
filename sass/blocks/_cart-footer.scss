@@ -1,6 +1,7 @@
 .cart-footer {
   display: grid;
   grid-template-columns: 5fr 3fr 4fr;
+  column-gap: 30px;
   background: #eaeff2;
   padding: 19px 0;
   font-weight: 700;
